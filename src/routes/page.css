@@ -1,0 +1,89 @@
+#home {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	min-height: calc(100vh - 60px);
+}
+
+#home h1 {
+	margin-bottom: 1rem;
+	font-size: 4rem;
+	text-align: center;
+	color: var(--font-color);
+}
+
+#home h1 span {
+	position: relative;
+	display: inline-block;
+
+	color: var(--primary);
+}
+
+#home p {
+	margin-bottom: 2rem;
+	font-size: 1.5rem;
+	text-align: center;
+	color: var(--font-color);
+
+	max-width: 500px;
+}
+
+#home form {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+
+	width: 500px;
+}
+
+#home form input[type='email'] {
+	padding: 1rem;
+	width: 100%;
+	border: 1px solid var(--border-color);
+	background-color: var(--body-inputs-bg);
+	border-radius: 30px;
+	font-size: 1rem;
+}
+
+#home form input[type='submit'] {
+	padding: 1rem 2rem;
+	border: none;
+	border-radius: 30px;
+	font-size: 1rem;
+	font-weight: 600;
+	background-color: var(--primary);
+	color: var(--font-secondary-color);
+	cursor: pointer;
+	transition: 0.2s ease-in-out;
+}
+
+#home form input[type='submit']:hover {
+	background-color: var(--primary-dark);
+}
+
+@media screen and (max-width: 768px) {
+	#home h1 {
+		font-size: 3rem;
+		max-width: 90%;
+	}
+
+	#home p {
+		font-size: 1.2rem;
+		max-width: 90%;
+	}
+
+	#home form {
+		width: 90%;
+		flex-direction: column;
+	}
+
+	#home form input[type='email'] {
+		width: 100%;
+	}
+
+	#home form input[type='submit'] {
+		width: 100%;
+	}
+}

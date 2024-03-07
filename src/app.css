@@ -1,0 +1,69 @@
+@font-face {
+	font-family: 'Simbal';
+	font-style: normal;
+	font-weight: 500;
+	src: url('assets/fonts/Simbal-Regular.ttf') format('truetype');
+}
+
+:root {
+	--body-bg: #1d1f1c;
+	--body-inputs-bg: #161715;
+
+	--primary: #c5de66;
+	--primary-dark: #a3c13a;
+
+	--font-color: #d6ded6;
+	--font-secondary-color: #303321;
+
+	--border-color: #2f2d2d;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	font-family: 'Simbal', sans-serif;
+}
+
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	font-family: 'Simbal', sans-serif;
+	background-color: var(--body-bg);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+	font-family: 'Simbal', sans-serif;
+}
+
+#root,
+#__next {
+	isolation: isolate;
+}

@@ -1,26 +1,38 @@
-# Analog App
+# create-svelte
 
-This project was generated with [Analog](https://analogjs.org), the fullstack meta-framework for Angular.
+Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
 
-## Setup
+## Creating a project
 
-Run `npm install` to install the application dependencies.
+If you're seeing this, you've probably already done this step. Congrats!
 
-## Development
+```bash
+# create a new project in the current directory
+npm create svelte@latest
 
-Run `npm start` for a dev server. Navigate to `http://localhost:5173/`. The application automatically reloads if you change any of the source files.
+# create a new project in my-app
+npm create svelte@latest my-app
+```
 
-## Build
+## Developing
 
-Run `npm run build` to build the client/server project. The client build artifacts are located in the `dist/analog/public` directory. The server for the API build artifacts are located in the `dist/analog/server` directory.
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-## Test
+```bash
+npm run dev
 
-Run `npm run test` to run unit tests with [Vitest](https://vitest.dev).
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
 
-## Community
+## Building
 
-- Visit and Star the [GitHub Repo](https://github.com/analogjs/analog)
-- Join the [Discord](https://chat.analogjs.org)
-- Follow us on [Twitter](https://twitter.com/analogjs)
-- Become a [Sponsor](https://github.com/sponsors/brandonroberts)
+To create a production version of your app:
+
+```bash
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
